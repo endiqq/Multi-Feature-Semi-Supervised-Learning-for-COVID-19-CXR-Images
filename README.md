@@ -9,5 +9,19 @@ This is the code to repoduce the study of [Multi-Feature Semi-Supervised Learnin
 
 ![image](https://user-images.githubusercontent.com/31194584/114582499-a2582580-9c4e-11eb-88df-ae9dbc6f3fed.png)
 
+## Result ##
 
-The highest mean accuracy on sub-dataset one of COVID-Ti is 95.57% (+/- 0.3)
+- Test-1
+
+Method | Labeled Sample (%) | Precision  | Recall | F1-Scores | Top-1(%)
+------ | ------------------ | ---------- | ------ | --------- |-------- 
+MF-TS  | 30 | 0.94  | 0.94 | 0.94 | 93.61
+
+- Test-2
+
+Method | Labeled Sample (%) | Precision  | Recall | F1-Scores | Top-1(%)
+------ | ------------------ | ---------- | ------ | --------- |-------- 
+MF-TS  | 30 | 0.93  | 0.94 | 0.93 | 92.47
+
+## Usage ##
+
