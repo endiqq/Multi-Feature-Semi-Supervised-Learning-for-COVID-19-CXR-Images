@@ -1,4 +1,4 @@
-# Multi-Feature-Semi-Supervised-Learning-COVID-19
+# Multi-Feature-Semi-Supervised-Learning_COVID-19
 
 
 ## Introduction ##
