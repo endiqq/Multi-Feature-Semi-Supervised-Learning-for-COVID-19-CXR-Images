@@ -25,3 +25,18 @@ MF-TS  | 30 | 0.93  | 0.94 | 0.93 | 92.47
 
 ## Usage ##
 
+- Dataset and Trained model weights:
+  - Download them from [Kaggle](https://www.kaggle.com/endiqq/largest-covid19-dataset?select=covid_metadata.csv). CXR folder are all origianl CXR images and Enh folder are all corresponding enhanced images. All weights are in the weight folder
+
+- Preparation:
+  - Create a folder to save all downloaded files from this repo and files from Kaggle in one folder. Please modify the coloumn of both test_ds.txt and additional_test_ds.txt to the directory where you create the folder
+
+- Test:
+  - CXR-TS: python Test.py --action=retest --dataset=test_ds/additional_test_ds --per_teacher=0.1/0.2/0.3 (test_ds=Test-1; additiona_test_ds=Test-2; 0.1=10% labeled samples etc.)
+  - Enh-TS: python Test.py --action=retest --dataset=test_ds/additional_test_ds --type=Enh --per_teacher=0.1/0.2/0.3 (type = image type; default = CXR)
+  - MF-T: python Test.py --action=retest_based_both --dataset=test_ds/additional_test_ds --per_teacher=0.1/0.2/0.3
+  - MF-TS: python Test.py --action=latefusion_retest_2models --dataset=test_ds/additional_test_ds --per_teacher=0.1/0.2/0.3
+
+
+
+
